@@ -1,0 +1,15 @@
+# Visual Studio
+.vs/
+out/
+CMakeSettings.json
+
+# Visual Studio Code
+.vscode/*
+!.vscode/*.docker.json
+!.vscode/extensions.json
+*.code-workspace
+
+build*
+.cache/
+.clangd
+compile_commands.json

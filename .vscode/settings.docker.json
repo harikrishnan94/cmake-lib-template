@@ -1,0 +1,16 @@
+{
+    "cmake.environment": {
+        "VCPKG_FEATURE_FLAGS": "registries",
+        "VCPKG_ROOT": "${env:HOME}/vcpkg"
+    },
+    "cmake.buildDirectory": "${env:HOME}/build",
+    "cmake.configureArgs": [
+        "-Wno-dev",
+        "-DCMAKE_TOOLCHAIN_FILE=${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+        "-DCMAKE_INSTALL_PREFIX=${env:HOME}/.local",
+        "-DENABLE_ASAN=Off",
+        "-DENABLE_UBSAN=Off"
+    ],
+    "clangd.path": "clangd-12",
+    "C_Cpp.intelliSenseEngine": "Disabled"
+}
